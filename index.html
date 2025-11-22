@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DK Social Space | Beta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'media',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Roboto"', 'sans-serif'],
+              display: ['"Inter"', 'sans-serif'],
+            },
+            borderRadius: {
+              'xl': '1rem',
+              '2xl': '1.5rem',
+              '3xl': '2rem',
+              '4xl': '3rem',
+            },
+            colors: {
+              md: {
+                sys: {
+                  light: {
+                    primary: '#6750A4',
+                    onPrimary: '#FFFFFF',
+                    primaryContainer: '#EADDFF',
+                    onPrimaryContainer: '#21005D',
+                    secondary: '#625B71',
+                    onSecondary: '#FFFFFF',
+                    secondaryContainer: '#E8DEF8',
+                    onSecondaryContainer: '#1D192B',
+                    surface: '#FFFBFE',
+                    onSurface: '#1C1B1F',
+                    surfaceVariant: '#E7E0EC',
+                    onSurfaceVariant: '#49454F',
+                    outline: '#79747E',
+                    background: '#FFFBFE',
+                  },
+                  dark: {
+                    primary: '#D0BCFF',
+                    onPrimary: '#381E72',
+                    primaryContainer: '#4F378B',
+                    onPrimaryContainer: '#EADDFF',
+                    secondary: '#CCC2DC',
+                    onSecondary: '#332D41',
+                    secondaryContainer: '#4A4458',
+                    onSecondaryContainer: '#E8DEF8',
+                    surface: '#1C1B1F',
+                    onSurface: '#E6E1E5',
+                    surfaceVariant: '#49454F',
+                    onSurfaceVariant: '#CAC4D0',
+                    outline: '#938F99',
+                    background: '#1C1B1F',
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(103, 80, 164, 0.3);
+        border-radius: 20px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-md-sys-light-background dark:bg-md-sys-dark-background text-md-sys-light-onSurface dark:text-md-sys-dark-onSurface">
+    <div id="root"></div>
+  </body>
+</html>
